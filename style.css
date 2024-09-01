@@ -36,7 +36,7 @@ h3{
     justify-content: space-around;
 }
 
-/* .next-question button{
+ .next-question button{
     color: black;
     font-size: large;
     background-color: green;
@@ -46,7 +46,7 @@ h3{
     margin-top: 30%;
 }
 
-.options button{
+/* .options button{ 
     border: 0px;
     border-radius: 5px;
     box-shadow: ;
