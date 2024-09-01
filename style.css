@@ -27,6 +27,29 @@ body{
 }
 
 h3{
-    margin-top: -17%;
+    margin-top: -10%;
     margin-left: 50%;
+}
+
+.options{
+    display: flex;
+    justify-content: space-around;
+}
+
+.next-question button{
+    color: black;
+    font-size: large;
+    background-color: green;
+    border: 0px;
+    border-radius: 5px;
+    padding: 10px 20px ;
+    margin-top: 30%;
+}
+
+.options button{
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: ;
+    padding: 15px;
+    font-size: large;
 }
