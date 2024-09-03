@@ -47,13 +47,13 @@ function answerCheck(selectedOptionIndex) {
     }
 }
 
-function nextQuestion() {
-    questionIndex++
-    if (questionIndex >= questions.length) {
-        questionIndex = 0;
-    }
-    Question()
-}
+// function nextQuestion() {
+//     questionIndex++
+//     if (questionIndex >= questions.length) {
+//         questionIndex = 0;
+//     }
+//     Question()
+// }
 Question()
 // var over = document.getElementById("over");
 // document.getElementById("over").textContent = "GAME OVER!";
