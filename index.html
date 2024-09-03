@@ -9,25 +9,26 @@
 <body>
     <div class="game-container">
         <div class="question-area">
-            <h3 class="Score">Your Score is = </h3>
+            <h3 class="Score">Your Score is =<h3 id="score"></h3> </h3>
             <br><br>
             <h2>Your Question is :</h2>
+            <br>
             <h2 id="question"></h2>
             <br><br>
         </div>
         <div class="response">
             <h2>Answers:</h2>
-            <br><br>
+            <br><br>    
             <div class="options">
-                <button id="choice1">1</button>
-                <button id="choice2">2</button>
-                <button id="choice3">3</button>
-                <button id="choice4">4</button>
+                <button id="choice1" onclick="answerCheck()"selectedOptionIndex"></button>
+                <button id="choice2" onclick="answerCheck()"></button>
+                <button id="choice3" onclick="answerCheck()"></button>
+                <button id="choice4" onclick="answerCheck()"></button>
             </div>
         </div>
         <div class="next-question">
             <br><br>
-            <button>Next Question</button>    
+            <button id="next-question-btn" onclick="nextQuestion()">Next Question</button>    
         </div>
         
     </div>
