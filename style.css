@@ -80,3 +80,7 @@ h3{
 .over{
     color: red;
 }
+
+#score{
+    display: inline;
+}
