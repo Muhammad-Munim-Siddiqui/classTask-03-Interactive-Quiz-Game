@@ -13,6 +13,16 @@ var questions = [
         Question: "what is 1 + 1?",
         Options: [1,2,3,0],
         Answer: 1
+    },
+    {
+        Question: "what is 2 x 2?",
+        Options: [2,4,1,0],
+        Answer: 1
+    },
+    {
+        Question: "what is (10 + 2) - 2?",
+        Options: [12,14,10,0],
+        Answer: 2
     }
 ] 
 var score = 0;
@@ -24,16 +34,17 @@ function Question(){
     document.getElementById("choice2").textContent = questions[questionIndex].Options[1]
     document.getElementById("choice3").textContent = questions[questionIndex].Options[2]
     document.getElementById("choice4").textContent = questions[questionIndex].Options[3]
+    document.getElementById("score").textContent = score
 }
-
+// questions[questionIndex].Options[selectedOptionIndex]
 function answerCheck(selectedOptionIndex) {
-    if (questions[questionIndex].Answer === questions[questionIndex].Options[selectedOptionIndex]) {
+    if (questions[questionIndex].Answer === selectedOptionIndex) {
         alert("You Got It Right!")
         score++;
     }
-    // else{
-    //     alert("You Got It Wrong!")
-    // }
+    else{
+        alert("You Got It Wrong!")
+    }
 }
 
 function nextQuestion() {
