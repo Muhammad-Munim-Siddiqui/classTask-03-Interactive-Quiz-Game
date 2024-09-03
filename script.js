@@ -54,6 +54,7 @@ function nextQuestion() {
     }
     Question()
 }
+Question()
 // var over = document.getElementById("over");
 // document.getElementById("over").textContent = "GAME OVER!";
 // function nextQuestion(){
@@ -61,4 +62,3 @@ function nextQuestion() {
 // if (questionIndex >= questions.length -1 ) {
 //         alert("GAME OVER!")
 //     }
-Question()
