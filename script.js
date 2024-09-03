@@ -36,7 +36,6 @@ function Question(){
     document.getElementById("choice4").textContent = questions[questionIndex].Options[3]
     document.getElementById("score").textContent = score
 }
-// questions[questionIndex].Options[selectedOptionIndex]
 function answerCheck(selectedOptionIndex) {
     if (questions[questionIndex].Answer === selectedOptionIndex) {
         alert("You Got It Right!")
@@ -47,18 +46,11 @@ function answerCheck(selectedOptionIndex) {
     }
 }
 
-// function nextQuestion() {
-//     questionIndex++
-//     if (questionIndex >= questions.length) {
-//         questionIndex = 0;
-//     }
-//     Question()
-// }
+function nextQuestion() {
+    questionIndex++
+    if (questionIndex >= questions.length) {
+        questionIndex = 0;
+    }
+    Question()
+}
 Question()
-// var over = document.getElementById("over");
-// document.getElementById("over").textContent = "GAME OVER!";
-// function nextQuestion(){
-// }
-// if (questionIndex >= questions.length -1 ) {
-//         alert("GAME OVER!")
-//     }
