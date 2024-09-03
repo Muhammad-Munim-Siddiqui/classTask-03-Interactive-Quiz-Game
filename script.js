@@ -8,6 +8,46 @@ var questions = [
         Question: "what is 2 - 2",
         Options: [2,8,0,3],
         Answer: 2
+    },
+    {
+        Question: "what is 1 + 1?",
+        Options: [1,2,3,0],
+        Answer: 1
     }
+] 
+var score = 0;
+var questionIndex = 0;
+function Question(){
+    var questionElement = document.getElementById("question");
+    questionElement.textContent = questions[questionIndex].Question;
+    document.getElementById("choice1").textContent = questions[questionIndex].Options[0]
+    document.getElementById("choice2").textContent = questions[questionIndex].Options[1]
+    document.getElementById("choice3").textContent = questions[questionIndex].Options[2]
+    document.getElementById("choice4").textContent = questions[questionIndex].Options[3]
+}
 
-]
+function answerCheck(selectedOptionIndex) {
+    if (questions[questionIndex].Answer === questions[questionIndex].Options[selectedOptionIndex]) {
+        alert("You Got It Right!")
+        score++;
+    }
+    // else{
+    //     alert("You Got It Wrong!")
+    // }
+}
+
+function nextQuestion() {
+    questionIndex++
+    if (questionIndex >= questions.length) {
+        questionIndex = 0;
+    }
+    Question()
+}
+// var over = document.getElementById("over");
+// document.getElementById("over").textContent = "GAME OVER!";
+// function nextQuestion(){
+// }
+// if (questionIndex >= questions.length -1 ) {
+//         alert("GAME OVER!")
+//     }
+Question()
