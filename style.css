@@ -55,7 +55,7 @@ h3{
 
 .options button:hover{
     background-color: gray;
-    padding: 18px;
+    /* padding: 18px; */
     transition: 0.1s;
 }
 
