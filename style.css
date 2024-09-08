@@ -15,7 +15,7 @@ body{
 
 
 .game-container {
-    height: 370px;
+    height: 400px;
     align-items: center;
     justify-content: center;
     background-color: #fff;
@@ -26,8 +26,13 @@ body{
     width: 300px;
 }
 
-h3{
+.Score{
     margin-top: -10%;
+    margin-left: 50%;
+}
+
+#score{
+    display: inline;
     margin-left: 50%;
 }
 
@@ -43,7 +48,7 @@ h3{
     border: 0px;
     border-radius: 5px;
     padding: 10px 20px ;
-    margin-top: 15%;
+    margin-top: 10%;
 }
 
 .options button{ 
@@ -60,9 +65,9 @@ h3{
 }
 
 .next-question button:hover{
-    padding: 15px 25px;
     transition: 0.1s;
-    font-size: larger;
+    background-color: rgb(0, 196, 0);
+    /* font-size: larger; */
 }
 .options button:active{
     padding: 16px;
@@ -71,9 +76,8 @@ h3{
 }
 
 .next-question button:active{
-    padding: 12px 18px;
     background-color: rgb(0, 196, 0);
-    font-size: large;
+    font-size: 99%;
     transition: 0s;
 }
 
@@ -81,6 +85,7 @@ h3{
     color: red;
 }
 
-#score{
-    display: inline;
+
+.game-over{
+    position: absolute;
 }

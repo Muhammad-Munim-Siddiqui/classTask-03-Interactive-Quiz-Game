@@ -49,8 +49,15 @@ function answerCheck(selectedOptionIndex) {
 function nextQuestion() {
     questionIndex++
     if (questionIndex >= questions.length) {
-        questionIndex = 0;
+        var gameOver = `GAME OVER! your score is ${score} out of ${questions.length}`
+        document.getElementById("game-over").textContent = gameOver
+        // questionIndex = 0;
     }
     Question()
 }
+
+function functionDisable(){
+
+}
+
 Question()
