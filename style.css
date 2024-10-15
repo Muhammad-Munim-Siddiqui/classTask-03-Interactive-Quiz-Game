@@ -88,4 +88,5 @@ body{
 
 .game-over{
     position: absolute;
+    margin-right: 5%    ;
 }

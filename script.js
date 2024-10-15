@@ -40,6 +40,8 @@ function answerCheck(selectedOptionIndex) {
     if (questions[questionIndex].Answer === selectedOptionIndex) {
         alert("You Got It Right!")
         score++;
+    document.getElementById("score").textContent = score
+        
     }
     else{
         alert("You Got It Wrong!")
